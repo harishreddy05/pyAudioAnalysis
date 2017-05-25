@@ -242,7 +242,7 @@ def stChromaFeaturesInit(nfft, fs):
     """
     This function initializes the chroma matrices used in the calculation of the chroma features
     """
-    freqs = numpy.array([((f + 1) * fs) / (2 * nfft) for f in range(nfft)])    
+    freqs = numpy.array([((f + 1) * fs) / (2 * nfft) for f in range(int(nfft))])    
     Cp = 27.50    
     nChroma = numpy.round(12.0 * numpy.log2(freqs / Cp)).astype(int)
 
