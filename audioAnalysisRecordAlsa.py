@@ -2,9 +2,9 @@ import sys, os, alsaaudio, time, audioop, numpy, glob,  scipy, subprocess, wave,
 import matplotlib.pyplot as plt
 import scipy.io.wavfile as wavfile
 from scipy.fftpack import rfft
-from . import audioFeatureExtraction as aF	
-from . import audioTrainTest as aT
-from . import audioSegmentation as aS
+import audioFeatureExtraction as aF	
+import audioTrainTest as aT
+import audioSegmentation as aS
 from scipy.fftpack import fft
 import matplotlib
 matplotlib.use('TkAgg')
