@@ -500,7 +500,7 @@ def stSpectogram(signal, Fs, Win, Step, PLOT=False):
         ax.set_yticks(FreqTicks)
         ax.set_yticklabels(FreqTicksLabels)
         TStep = countFrames/3
-        TimeTicks = list(range(0, countFrames, TStep))
+        TimeTicks = list(range(0, countFrames, int(TStep)))
         TimeTicksLabels = ['%.2f' % (float(t * Step) / Fs) for t in TimeTicks]
         ax.set_xticks(TimeTicks)
         ax.set_xticklabels(TimeTicksLabels)
