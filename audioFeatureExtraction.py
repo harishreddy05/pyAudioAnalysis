@@ -350,10 +350,10 @@ def stChromagram(signal, Fs, Win, Step, PLOT=False):
         Fstep = int(nfft / 5.0)
 #        FreqTicks = range(0, int(nfft) + Fstep, Fstep)
 #        FreqTicksLabels = [str(Fs/2-int((f*Fs) / (2*nfft))) for f in FreqTicks]
-        ax.set_yticks(list(range(Ratio / 2, len(FreqAxis) * Ratio, Ratio)))
+        ax.set_yticks(list(range(int(Ratio / 2), int(len(FreqAxis) * Ratio), int(Ratio))))
         ax.set_yticklabels(FreqAxis[::-1])
         TStep = countFrames / 3
-        TimeTicks = list(range(0, countFrames, TStep))
+        TimeTicks = list(range(0, countFrames, int(TStep)))
         TimeTicksLabels = ['%.2f' % (float(t * Step) / Fs) for t in TimeTicks]
         ax.set_xticks(TimeTicks)
         ax.set_xticklabels(TimeTicksLabels)
