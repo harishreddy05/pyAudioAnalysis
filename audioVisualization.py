@@ -4,8 +4,8 @@ import matplotlib.pyplot as plt
 from scipy.spatial import distance
 from pylab import *
 import ntpath
-from . import audioFeatureExtraction as aF    
-from . import audioTrainTest as aT
+import audioFeatureExtraction as aF    
+import audioTrainTest as aT
 import sklearn
 import sklearn.discriminant_analysis
 

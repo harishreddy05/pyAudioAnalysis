@@ -9,8 +9,8 @@ import audioop
 import signal
 import csv
 import ntpath
-from . import audioFeatureExtraction as aF
-from . import audioBasicIO
+import audioFeatureExtraction as aF
+import audioBasicIO
 from matplotlib.mlab import find
 import matplotlib.pyplot as plt
 import scipy.io as sIO

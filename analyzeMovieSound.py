@@ -1,8 +1,8 @@
 import os, sys, shutil, glob, numpy, csv, pickle
 import scipy.io.wavfile as wavfile
-from . import audioBasicIO
-from . import audioTrainTest as aT
-from . import audioSegmentation as aS
+import audioBasicIO
+import audioTrainTest as aT
+import audioSegmentation as aS
 import matplotlib.pyplot as plt
 import scipy.spatial.distance
 minDuration = 7;
